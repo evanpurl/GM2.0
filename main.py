@@ -68,7 +68,7 @@ async def units(ctx):
                     await ctx.send('\n'.join(un))
                     num = 0
                     un.clear()
-                if a == len(filelist) - 1:
+                if a == len(filelist) - 1: # if the last unit has come, and the list isn't empty, send the last units
                     if len(un) != 0:
                         await ctx.send('\n'.join(un))
                 num += 1
